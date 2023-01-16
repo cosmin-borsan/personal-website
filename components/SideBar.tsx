@@ -7,7 +7,6 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 
 function Sidebar() {
     return (
@@ -119,7 +118,7 @@ function Sidebar() {
                     <li className="social-item">
                         <a href="https://www.goodreads.com/user/show/149073596-cosmin-borsan" className="social-link">
                             <span title="Goodreads" style={{ fontSize: "x-large" }}>
-                                <MenuBookOutlinedIcon />
+                                g
                             </span>
                         </a>
                     </li>

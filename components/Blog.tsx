@@ -1,4 +1,12 @@
-function Blog() {
+import urlFor from "../lib/urlFor";
+
+type Props = {
+    posts: Post[];
+};
+
+function Blog({ posts }: Props) {
+    console.log(posts);
+
     return (
         <article className="blog" data-page="blog">
             <header>
@@ -7,6 +15,39 @@ function Blog() {
 
             <section className="blog-posts">
                 <ul className="blog-posts-list">
+                    {posts.map((post) => (
+                        <li key={post._id} className="blog-post-item">
+                            <a href="#">
+                                <figure className="blog-banner-box">
+                                    <img src={urlFor(post.mainImage).url()} alt={post.title} loading="lazy" />
+                                </figure>
+
+                                <div className="blog-content">
+                                    <div className="blog-meta">
+                                        <p className="blog-category">
+                                            {post.categories.map((category) => (
+                                                <span key={category._id}>{category.title}</span>
+                                            ))}
+                                        </p>
+
+                                        <span className="dot"></span>
+
+                                        <time>
+                                            {new Date(post._createdAt).toLocaleDateString("en-US", {
+                                                day: "numeric",
+                                                month: "long",
+                                                year: "numeric",
+                                            })}
+                                        </time>
+                                    </div>
+
+                                    <h3 className="h3 blog-item-title">{post.title}</h3>
+
+                                    <p className="blog-text">{post.description}</p>
+                                </div>
+                            </a>
+                        </li>
+                    ))}
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">

@@ -21,19 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body>
             <main>
                 <Sidebar />
-
-                <div className="main-content">
-                    <Navbar />
-                    <About />
-
-                    <Resume />
-
-                    <Portfolio />
-
-                    <Blog />
-
-                    <Contact />
-                </div>
+                {children}
             </main>
             <script src="./assets/js/script.js"></script>
             <script src="./assets/js/script2.js"></script>

@@ -5,6 +5,12 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
 import { Suspense } from "react";
+import Navbar from "../../components/Navbar";
+import About from "../../components/About";
+import Resume from "../../components/Resume";
+import Portfolio from "../../components/Portfolio";
+import Blog from "../../components/Blog";
+import Contact from "../../components/Contact";
 
 const query = groq`
     *[_type=='post'] {
@@ -33,15 +39,26 @@ async function HomePage() {
 
     const posts = await client.fetch(query);
     return (
-        <Suspense
-            fallback={
-                <div role="status">
-                    <p className="text-center text-lg animate-pulse text-[#F7AB0A]"> Loading Preview Data...</p>
-                </div>
-            }
-        >
-            <BlogList posts={posts} />
-        </Suspense>
+        <div className="main-content">
+            <Navbar />
+            <About />
+
+            <Resume />
+
+            <Portfolio />
+
+            <Suspense
+                fallback={
+                    <div role="status">
+                        <p className="text-center text-lg animate-pulse text-[#F7AB0A]"> Loading Preview Data...</p>
+                    </div>
+                }
+            >
+                <Blog posts={posts} />
+            </Suspense>
+            <Contact />
+            {/* <BlogList posts={posts} /> */}
+        </div>
     );
 }
 
