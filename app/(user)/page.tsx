@@ -39,8 +39,7 @@ async function HomePage() {
 
     const posts = await client.fetch(query);
     return (
-        <div className="main-content">
-            <Navbar />
+        <>
             <About />
 
             <Resume />
@@ -58,7 +57,7 @@ async function HomePage() {
             </Suspense>
             <Contact />
             {/* <BlogList posts={posts} /> */}
-        </div>
+        </>
     );
 }
 
