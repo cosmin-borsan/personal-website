@@ -5,8 +5,6 @@ type Props = {
 };
 
 function Blog({ posts }: Props) {
-    console.log(posts);
-
     return (
         <article className="blog" data-page="blog">
             <header>
