@@ -1,18 +1,7 @@
-import { previewData } from "next/headers";
-import { groq } from "next-sanity";
-import { client } from "../../lib/sanity.client";
-import PreviewSuspense from "../../components/PreviewSuspense";
-import PreviewBlogList from "../../components/PreviewBlogList";
+import { redirect } from "next/navigation";
 
-export const revalidate = 60;
-
-async function HomePage() {
-    return (
-        <>
-            <div>home</div>
-            {/* <BlogList posts={posts} /> */}
-        </>
-    );
+async function Home() {
+    redirect("/about");
 }
 
-export default HomePage;
+export default Home;

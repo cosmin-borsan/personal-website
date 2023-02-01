@@ -5,10 +5,6 @@ import urlFor from "../../../lib/urlFor";
 import { client } from "../../../lib/sanity.client";
 import PreviewSuspense from "../../../components/PreviewSuspense";
 
-type Props = {
-    posts: Post[];
-};
-
 const query = groq`
     *[_type=='post'] {
         ...,
