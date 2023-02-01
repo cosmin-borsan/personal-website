@@ -4,6 +4,7 @@ import PreviewBlogList from "../../../components/PreviewBlogList";
 import urlFor from "../../../lib/urlFor";
 import { client } from "../../../lib/sanity.client";
 import PreviewSuspense from "../../../components/PreviewSuspense";
+import Link from "next/link";
 
 const query = groq`
     *[_type=='post'] {
@@ -41,7 +42,7 @@ async function Blog() {
                 <ul className="blog-posts-list">
                     {posts.map((post) => (
                         <li key={post._id} className="blog-post-item">
-                            <a href="#">
+                            <Link href={`/post/${post.slug.current}`}>
                                 <figure className="blog-banner-box">
                                     <img src={urlFor(post.mainImage).url()} alt={post.title} loading="lazy" />
                                 </figure>
@@ -69,7 +70,7 @@ async function Blog() {
 
                                     <p className="blog-text">{post.description}</p>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                     <li className="blog-post-item">
