@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -5,33 +6,33 @@ function Navbar() {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li className="navbar-item">
-                    <button className="navbar-link active" data-nav-link>
+                    <Link className="navbar-link" href="/about">
                         About
-                    </button>
+                    </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <button className="navbar-link" data-nav-link>
+                    <Link className="navbar-link" href="/resume">
                         Resume
-                    </button>
+                    </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <button className="navbar-link" data-nav-link>
+                    <Link className="navbar-link" href="/portfolio">
                         Portfolio
-                    </button>
+                    </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <button className="navbar-link" data-nav-link>
+                    <Link className="navbar-link" href="/blog">
                         Blog
-                    </button>
+                    </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <button className="navbar-link" data-nav-link>
+                    <Link className="navbar-link" href="/contact">
                         Contact
-                    </button>
+                    </Link>
                 </li>
             </ul>
         </nav>

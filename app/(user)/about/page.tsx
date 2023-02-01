@@ -1,5 +1,6 @@
 "use client";
 import CloseIcon from "@mui/icons-material/Close";
+
 function About() {
     return (
         <article className="about active" data-page="about">

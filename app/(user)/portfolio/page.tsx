@@ -4,7 +4,7 @@ import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 
 function Portfolio() {
     return (
-        <article className="portfolio" data-page="portfolio">
+        <article className="portfolio active" data-page="portfolio">
             <header>
                 <h2 className="h2 article-title">Portfolio</h2>
             </header>
