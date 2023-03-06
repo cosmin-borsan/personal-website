@@ -114,7 +114,7 @@ function About() {
 
                             <div className="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Cosmin was hired to create a corporate identity. We were very pleased with the work
                                     done. She has a lot of experience and is very concerned about the needs of client.
                                     Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et
                                     eiusmod tempor incididunt ut laborels dolore magnarels alia.
@@ -140,7 +140,7 @@ function About() {
 
                             <div className="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Cosmin was hired to create a corporate identity. We were very pleased with the work
                                     done. She has a lot of experience and is very concerned about the needs of client.
                                     Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et
                                     eiusmod tempor incididunt ut laborels dolore magnarels alia.
@@ -166,7 +166,7 @@ function About() {
 
                             <div className="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Cosmin was hired to create a corporate identity. We were very pleased with the work
                                     done. She has a lot of experience and is very concerned about the needs of client.
                                     Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et
                                     eiusmod tempor incididunt ut laborels dolore magnarels alia.
@@ -192,7 +192,7 @@ function About() {
 
                             <div className="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Cosmin was hired to create a corporate identity. We were very pleased with the work
                                     done. She has a lot of experience and is very concerned about the needs of client.
                                     Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et
                                     eiusmod tempor incididunt ut laborels dolore magnarels alia.
@@ -228,7 +228,7 @@ function About() {
 
                         <div data-modal-text>
                             <p>
-                                Richard was hired to create a corporate identity. We were very pleased with the work
+                                Cosmin was hired to create a corporate identity. We were very pleased with the work
                                 done. She has a lot of experience and is very concerned about the needs of client. Lorem
                                 ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod
                                 tempor incididunt ut laborels dolore magnarels alia.
